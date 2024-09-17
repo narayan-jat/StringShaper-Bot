@@ -1,0 +1,51 @@
+@import "../index.css";
+
+.message-timeline {
+    font-family: sans-serif;
+    font-size: small;
+    margin-left: 15px;
+    margin-top: -8px;
+    display: flex;
+    justify-content: end;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    max-width: 80%;
+    width: fit-content;
+    padding: 0px 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.message-body {
+    font-family: sans-serif;
+    text-wrap: wrap;
+    margin-top: -10px;
+}
+
+
+.message.bot {
+    background-color: var(--bot-message-color);
+    text-align: left;
+    color: var(--font-color);
+    margin-right: auto;
+  }
+
+.message.human {
+    background-color: var(--human-message-color);
+    color: var(--font-color);
+    text-align: right;
+    margin-left: auto;
+    color: white;
+  }
+.message-header {
+    margin-bottom: 5px;
+    font-size: large;
+    font-weight: 800;
+    padding-top: 5px;
+}

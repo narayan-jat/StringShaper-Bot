@@ -1,0 +1,32 @@
+@import "../index.css";
+.chat-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar-color);
+    position: fixed;
+    color: var(--font-color);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.profile {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+.profile-name {
+    margin-left: 20px;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+@media (min-width: 769px) {
+    .chat-navbar {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

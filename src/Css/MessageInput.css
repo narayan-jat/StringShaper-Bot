@@ -1,0 +1,79 @@
+@import "../index.css";
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    margin-top: 1%;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    background-color: var(--background-color);
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    color: var(--font-color);
+    background-color: var(--background-color);
+  }
+  
+  .emoji {
+    margin-right: 1%;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--primary-color);
+  }
+
+
+.send-button {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 8px 8px;
+    background-color: #007bff;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 0.5rem;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+.horizontal-plane-icon {
+    font-size: 20px;
+}
+
+.emoji-container {
+    position: relative;
+    display: inline-block;
+}
+
+.emoji-picker {
+    position: absolute;
+    bottom: 40px;
+    z-index: 1000;
+}
+
+.emoji-icon {
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 15px;
+    margin-left: 10px;
+    color: var(--font-color);
+}
+
+
+@media (min-width: 769px) {
+    .input-container {
+        max-width: 50%;
+        
+    }
+}
